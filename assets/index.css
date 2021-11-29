@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	font-family: Regular, Helvetica;
 }
+:root {
+	font-size: 1.6vh;
+}
 
 body {
 	background-color: rgb(20, 20, 20);
@@ -152,6 +155,40 @@ SLIDER
 	font-size: 1.8rem;
 	padding: 6px 12px;
 }
+
+/* SLIDE BUTTONS */
+#slider-button-container {
+	width: fit-content;
+	margin: -30px auto 10px auto;
+	z-index: 4;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.slide-button {
+	cursor: pointer;
+	transition: 0.2s;
+	width: 16px;
+	height: 16px;
+	border: 2px solid rgb(145, 145, 145);
+	background-color: rgb(124, 124, 124);
+	border-radius: 50%;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.slide-button:hover {
+	background-color: rgb(207, 207, 207);
+	border: 2px solid rgb(207, 207, 207);
+	transition: 0.2s;
+}
+.active {
+	background-color: rgb(207, 207, 207);
+	border: 2px solid rgb(207, 207, 207);
+	transition: 0.2s;
+}
+/* SLIDE BUTTONS */
 
 /* 
 ====================
