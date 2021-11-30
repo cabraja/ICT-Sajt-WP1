@@ -3,6 +3,7 @@ const slides = document.querySelectorAll(".slide");
 const slideButtons = document.querySelectorAll(".slide-button");
 let slidePercent = 0;
 
+// SLIDE CHANGE FUNCTION
 setInterval(() => {
     slidePercent += 100;
 
@@ -26,3 +27,21 @@ setInterval(() => {
         slideButtons[slidePercent/100].classList.add("active");
     }
 }, 5000);
+
+
+// NAV MENU FUNCTIONS
+const navIcon = document.querySelector("#nav-icon");
+const nav = document.querySelector("#nav");
+let isNavOpen = false;
+
+navIcon.addEventListener("click",() => {
+    if(isNavOpen){
+        nav.style.transform = "translateX(-100%)";
+        navIcon.style.transform = "rotate(0deg)";
+        isNavOpen = false;
+    }else{
+        nav.style.transform = "translateX(0%)";
+        navIcon.style.transform = "rotate(90deg)";
+        isNavOpen = true;
+    }
+})
