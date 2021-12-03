@@ -45,3 +45,12 @@ navIcon.addEventListener("click",() => {
         isNavOpen = true;
     }
 })
+
+
+// GENERATE ALL GAMES
+const allGames = localStorage.getItem("allGames");
+const main = document.querySelector("#main");
+
+console.log(allGames);
+
+

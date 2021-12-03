@@ -1,0 +1,297 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Regular, Helvetica;
+}
+:root {
+	font-size: 1.6vh;
+}
+
+body {
+	background-color: rgb(20, 20, 20);
+}
+/* FONTS */
+
+@font-face {
+	font-family: Regular;
+	src: url(./fonts/MPLUS2-VariableFont_wght.ttf);
+}
+
+/* 
+====================
+HEADER 
+====================
+*/
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(20, 20, 20);
+	color: whitesmoke;
+	padding: 1%;
+	position: relative;
+}
+#header-left {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#nav-icon {
+	font-size: 2rem;
+	margin-right: 28px;
+	margin-top: 5px;
+	cursor: pointer;
+	transform: rotate(0deg);
+	transition: transform 0.4s ease-in;
+}
+
+#header-left h1 {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+#header-right a {
+	color: whitesmoke;
+	font-size: 20px;
+	margin-right: 14px;
+}
+#header-right #author-link {
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: whitesmoke;
+	background-color: rgb(252, 92, 87);
+	border: 2px solid rgb(252, 92, 87);
+	border-radius: 10px;
+	padding: 6px 12px;
+	transition: 0.3s;
+}
+#header-right #author-link:hover {
+	border: 2px solid rgb(252, 92, 87);
+	background-color: transparent;
+	color: rgb(252, 92, 87);
+	transition: 0.3s;
+}
+
+/* NAV */
+nav {
+	position: absolute;
+	background-color: rgba(238, 238, 238, 0.897);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 4;
+	top: 100%;
+	left: 0;
+	padding: 10px 8px;
+	transform: translateX(-100%);
+	transition: transform 0.6s ease-in-out;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid rgb(168, 168, 168);
+	font-size: 1.4rem;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 500;
+	transition: 0.3s;
+	padding: 5px 12px;
+}
+nav a:nth-child(5) {
+	border-bottom: none;
+}
+nav a:hover {
+	color: black;
+	transition: 0.3s;
+	background-color: rgb(252, 92, 87);
+}
+/* NAV */
+
+/* 
+====================
+BANNER
+====================
+*/
+
+#games-banner {
+	width: 100%;
+	background-color: antiquewhite;
+	position: relative;
+	background-image: url(./images/for-honor.jpg);
+	background-position: 50% 20%;
+	background-size: cover;
+	z-index: 1;
+	height: 20vh;
+}
+#games-banner-wrapper {
+	width: 100%;
+	height: 100%;
+	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.719);
+	position: absolute;
+	z-index: 2;
+}
+h3 {
+	font-weight: 100;
+	font-size: 3rem;
+}
+h2 {
+	margin-bottom: 60px;
+	border-bottom: 1px solid rgb(92, 92, 92);
+	padding-bottom: 10px;
+	font-weight: 400;
+	font-size: 2rem;
+	color: whitesmoke;
+}
+
+/* 
+====================
+MAIN
+====================
+*/
+
+main {
+	padding: 3% 12%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.game {
+	margin-top: 6vh;
+	width: 20vw;
+	background-color: whitesmoke;
+	text-align: center;
+	box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 0.2);
+}
+.game h4 {
+	font-weight: 500;
+	color: rgb(2, 2, 2);
+	font-size: 1.2rem;
+}
+.game h5 {
+	font-weight: 100;
+	color: rgb(110, 110, 110);
+	font-size: 0.9rem;
+}
+.game-image {
+	cursor: pointer;
+	height: 28vh;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-color: rgb(247, 145, 141);
+	background-position: center;
+}
+.game-image:hover .game-description {
+	transform: translateY(0%);
+	transition: transform 0.6s ease-in-out;
+}
+.game-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	padding: 30px 12px;
+	text-align: center;
+	transform: translateY(-110%);
+	transition: transform 0.6s ease-in-out;
+	background-color: rgba(235, 235, 235, 0.925);
+}
+.game-buy {
+	border-top: 1px solid rgb(202, 202, 202);
+	padding-top: 12px;
+	margin: 4px auto 12px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+}
+.game-buy a {
+	text-decoration: none;
+	background-color: rgb(252, 92, 87);
+	color: whitesmoke;
+	font-size: 1rem;
+	padding: 6px 12px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.game-buy a:hover {
+	transition: 0.3s;
+	background-color: rgb(253, 198, 196);
+	color: black;
+}
+.game-buy h6 {
+	font-size: 1.1rem;
+}
+
+/* 
+====================
+FOOTER
+====================
+*/
+
+footer {
+	color: whitesmoke;
+	border-top: 1px solid rgb(92, 92, 92);
+	padding: 4% 8% 20px 8%;
+}
+
+#footer-main {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.footer-about {
+	width: 40%;
+}
+
+.footer-div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-div h4 {
+	font-weight: 400;
+	font-size: 1.3rem;
+}
+.footer-div p {
+	font-weight: 100;
+	color: #949494;
+}
+.footer-div a {
+	text-decoration: none;
+	color: #949494;
+	transition: 0.3s;
+	font-size: 1.1rem;
+}
+.footer-div a:hover {
+	color: rgb(252, 92, 87);
+	transition: 0.3s;
+}
+
+footer h6 {
+	font-size: 1rem;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 40px;
+}
