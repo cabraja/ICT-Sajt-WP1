@@ -36,7 +36,7 @@ let isNavOpen = false;
 
 navIcon.addEventListener("click",() => {
     if(isNavOpen){
-        nav.style.transform = "translateX(-100%)";
+        nav.style.transform = "translateX(-110%)";
         navIcon.style.transform = "rotate(0deg)";
         isNavOpen = false;
     }else{
@@ -46,11 +46,5 @@ navIcon.addEventListener("click",() => {
     }
 })
 
-
-// GENERATE ALL GAMES
-const allGames = localStorage.getItem("allGames");
-const main = document.querySelector("#main");
-
-console.log(allGames);
 
 

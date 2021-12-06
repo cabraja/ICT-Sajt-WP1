@@ -18,15 +18,14 @@
         <div id="header-right">
             <a href="#"><i class="fas fa-globe-americas"></i></a>
             <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#" id="author-link">Visit Author Page</a>
+            <a href="author.html" id="author-link">Visit Author Page</a>
         </div>
     
         <nav id="nav">
             <a href="index.html">Home</a>
-            <a href="#">About</a>
             <a href="games.html">Our Games</a>
             <a href="#">Contact</a>
-            <a href="#">Author</a>
+            <a href="author.html">Author</a>
         </nav>
     </header>
 
@@ -34,6 +33,14 @@
         <div id="games-banner-wrapper">
             <h3>Check Out All Of Our Games</h3>
         </div>
+    </div>
+
+    <div id="games-filter">
+        <button class="game-button" id="all">All</button>
+        <button class="game-button" id="action">Action</button>
+        <button class="game-button" id="rpg">RPG</button>
+        <button class="game-button" id="horror">Horror</button>
+        <button class="game-button" id="sports">Sports</button>
     </div>
 
     <main id="main">
@@ -125,7 +132,7 @@
             </div>
         </div>
 
-        <div class="game horro">
+        <div class="game horror">
             <div class="game-image" style="background-image: url(./assets/images/subnautica.jpg);">
                 <div class="game-description">
                     <p>Descend into the depths of an alien underwater world filled with wonder and peril. Craft equipment, pilot submarines and
@@ -220,5 +227,6 @@
         <h6>&copy; Made by: Mihajlo Čabraja 52/20</h6>
     </footer>
 </body>
-<script src="index.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/gameFilter.js"></script>
 </html>
