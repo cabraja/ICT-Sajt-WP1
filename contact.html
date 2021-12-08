@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/a5025c90e1.js" crossorigin="anonymous"></script>
     <title>CATACLYSM | Our Games</title>
     <link rel="stylesheet" href="./assets/games.css">
+    <link rel="stylesheet" href="./assets/form.css">
 </head>
 
 <body>
@@ -33,9 +34,32 @@
 
     <div id="games-banner">
         <div id="games-banner-wrapper">
-            <h3>About Author</h3>
+            <h3>Contact Us</h3>
         </div>
     </div>
+
+    <main>
+        <form id="contact-form" >
+            <label for="name">First Name:</label>
+            <input name="name" type="text" placeholder="First Name" id="name">
+            <label for="mail">Mail:</label>
+            <input name="mail" type="text" placeholder="E-mail adrress" id="mail">
+            <label for="phone">Phone Number</label>
+            <input name="phone" type="number" placeholder="9 or 10 digits" id="phone">
+            <label for="subject">Subject:</label>
+            <input name="subject" type="subject" placeholder="Subject" id="subject">
+            <label for="message">Your message:</label>
+            <textarea name="message" style="resize: none;" id="message" cols="70" rows="6"></textarea>
+            <button id="form-button">Send The Message</button>
+        </form>
+
+        <div id="main-right">
+            <h3>Have a question?</h3>
+            <p>If you cannot find an answer for your question using the forums, please submit a request through our convenient ticket
+            system to contact CATACLYSM directly. Please be as detailed as possible describing your issue. Also, if you have a great bussiness or game idea, or you 
+            would like to join our amazing team, feel free to write us a message!</p>
+        </div>
+    </main>
 
     <footer>
         <div id="footer-main">
@@ -67,3 +91,4 @@
 </body>
 
 <script src="./js/index.js"></script>
+<script src="./js/formCheck.js"></script>
