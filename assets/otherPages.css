@@ -299,6 +299,7 @@ AUTHOR
 }
 #author-info h5 {
 	margin-top: 6px;
+	margin-bottom: 12px;
 	font-size: 2.4rem;
 	color: rgb(190, 190, 190);
 	width: 100%;
@@ -306,11 +307,15 @@ AUTHOR
 	letter-spacing: 2px;
 }
 #author-info p {
-	margin-top: 12px;
 	font-size: 1.1rem;
 	color: rgb(228, 228, 228);
 }
-
+#author-info h6 {
+	color: whitesmoke;
+	font-weight: 200;
+	font-size: 1.2rem;
+	margin-bottom: 4px;
+}
 /* 
 ====================
 FOOTER

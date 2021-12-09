@@ -16,5 +16,11 @@ navIcon.addEventListener("click",() => {
     }
 })
 
+// AUTHOR SKILLS
+const authorSkills = document.getElementById("author-skills");
+let skills = ['HTML 5','CSS 3','SCSS','Javascript','React.js','Node.js','XML'];
 
+for(let i = 0; i <skills.length; i++){
+    authorSkills.innerHTML += `<h6>-${skills[i]}</h6>`
+}
 
