@@ -26,4 +26,4 @@ setInterval(() => {
         })
         slideButtons[slidePercent/100].classList.add("active");
     }
-}, 5000);
+}, 4000);

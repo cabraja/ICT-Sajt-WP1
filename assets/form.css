@@ -30,11 +30,12 @@ label {
 input {
 	font-size: 1.3rem;
 	padding: 2px 6px;
-	border: 1px solid rgb(54, 54, 54);
+	border: 2px solid rgb(54, 54, 54);
 	margin-bottom: 6px;
 }
 textarea {
 	padding: 4px 6px;
+	border: 2px solid rgb(54, 54, 54);
 }
 #contact-form button {
 	margin-top: 12px;
@@ -61,7 +62,7 @@ MAIN_RIGHT
 #main-right {
 	padding: 2% 5%;
 }
-h3 {
+h4 {
 	font-size: 1.8rem;
 	color: whitesmoke;
 	border-bottom: 1px solid rgb(189, 189, 189);
