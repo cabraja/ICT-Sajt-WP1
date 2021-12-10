@@ -182,3 +182,9 @@
 		margin-top: 12px;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	#header-right i {
+		margin-right: 2px;
+	}
+}
